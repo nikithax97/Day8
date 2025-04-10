@@ -1,0 +1,253 @@
+*{
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+  padding-block:0;
+  box-sizing: border-box;
+}
+body, html{
+  block-size: 100vh;
+  inline-size: 100%;
+  line-height: 1.6; 
+}
+header{
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: whitesmoke;
+  padding-block-start: 30px;
+}
+.resume{
+  inline-size: 820px;
+  block-size: 73%;
+  margin-inline: 60px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);  
+}
+.resume::before{
+   content: "";
+   position: absolute;
+   background-color: #3498db;
+   width: 1%;
+   height: 1235px; 
+}
+.top{
+  inline-size: 720px;
+  block-size: 200px;
+ margin-inline-start: 30px;
+}
+.top h1{
+  padding-block-start: 20px;
+  padding-inline-start: 20px;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.top h3{
+  padding-inline-start: 30px;
+  padding-block-start: 10px;
+  color: #3498db;
+}
+.top button{
+  all: unset;
+  margin-block-start: 20px;
+  font-size: 14px;
+  background-color:#f2f2f2;
+  margin-inline:19px;
+  border-radius: 20px;
+  text-align: center;
+    padding: 5px 7px;
+}
+.top hr{
+  margin-block-start: 30px;
+}
+.email{
+  inline-size: 300px;
+  block-size: 45px;
+}
+.h-no{
+  inline-size: 220px;
+  block-size: 45px;
+}
+.site{
+  inline-size: 230px;
+  block-size: 45px;
+}
+.place{
+  inline-size: 195px;
+  block-size: 45px;
+}
+.email::before{
+  content: "📧";
+}
+.h-no::before{
+  content:"📱";
+}
+.site::before{
+  content: "🌐";
+}
+.place::before{
+  content: "📍";
+}
+.summary{
+  block-size: 120px;
+  inline-size: 740px;
+  margin-block-start: 20px;
+ margin-inline-start: 30px;
+}
+.summary h2{
+ border-block-end: 2px solid #3498db;
+  inline-size: 120px;
+  letter-spacing: 2px;  
+}
+.summary p{
+  padding-block-start: 20px;
+}
+.exp{
+  margin-inline-start: 30px;
+  padding-block-start: 20px;
+ border-block-end: 2px solid #3498db;
+  inline-size: 150px;
+  letter-spacing: 2px;  
+}
+.text{
+  color: #3498db;
+}
+.one{
+  background-color: #f9f9f9;
+  inline-size: 775px;
+  block-size: 200px;
+  margin-inline-start: 30px;
+  border-radius: 10px;
+}
+.experience{
+   inline-size: 720px;
+  block-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline-start: 15px;
+  margin-block-start: 30px;
+  padding-inline: 10px;
+  padding-block-start: 10px;
+}
+.experience button{
+  all:unset;
+  background-color: #D7E1EF;
+  block-size: 25px;
+  inline-size: 150px;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.name{
+  block-size: 140px;
+  inline-size: 720px;
+  margin-inline-start: 15px;
+  margin-block-start: 10px;
+  padding-inline-start: 30px;
+}
+ul{
+  padding-block: 5px;
+}
+li{
+  padding-block: 3px;
+}
+.name p{
+  font-style: italic;
+  border-inline-start: 2px solid #e74c3c;
+  padding-inline-start: 5px;
+}
+.two{
+  background-color: #f9f9f9;
+  inline-size: 775px;
+  block-size: 200px;
+  margin-inline-start: 30px;
+  border-radius: 10px;
+  margin-block-start: 30px;
+}
+.previous{
+  inline-size: 720px;
+  block-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-inline-start: 15px;
+  margin-block-start: 30px;
+  padding-inline: 10px;
+  padding-block-start: 10px;
+}
+.previous button{
+  all:unset;
+  background-color: #D7E1EF;
+  block-size: 25px;
+  inline-size: 150px;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.edu{
+  margin-block-start: 30px;
+ border-block-end: 2px solid #3498db;
+  inline-size: 140px;
+  letter-spacing: 2px;  
+}
+.education {
+  background:  #f9f9f9;
+  inline-size: 95%;
+  block-size: 100px;
+  padding-block: 15px;
+  transform: translateY(4px);
+ margin-block-start: 30px;
+}
+.degree {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 15px;
+}
+.degree p {
+  background:  rgba(52, 152, 219, 0.08);
+  inline-size: 90px;
+  block-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+.degree h3 {
+  color: #3498db;
+}
+.education .location{
+  margin-inline-start: 15px;
+  margin-block-start: 20px;
+  font-style: italic;
+  border-inline-start: 2px solid #e74c3c;
+  padding-inline-start: 5px;
+}
+.study{
+  margin-block-start: 60px;
+}
+.year{
+  opacity: 0.5;
+}
+.skills::after{
+  content: "";
+  block-size: 2px;
+  inline-size: 80px;
+  position: absolute;
+  background: #3498db;
+  display: block;
+}
+.skills{
+  margin-block-start: 40px;
+  margin-inline-start: 10px;
+  letter-spacing: 2px;  
+}
+.footer {
+  display: flex;
+  gap: 12px;
+  margin-block-start: 30px;
+}
+.footer button{
+  all: unset;
+  block-size: 40px;
+  inline-size: 75px;
+  background: #D7E1EF;
+  text-align: center;
+  border-radius: 20px;
+  border-inline-start: 3px solid #3498db;
+}
